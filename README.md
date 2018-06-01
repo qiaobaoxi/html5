@@ -93,3 +93,58 @@
      <make> 标记定义有标记的文本（黄色选中状态）
      
      <output> 标记定义一些输出类型，计算表单结果配合oninput事件
+        
+        <form oninput="totalPrice.value=parseInt(price.value)*parseint(number.value)"> 
+           <input type="text" id="price" value="5000">*
+           <input type="number" id="number" value="1">=
+           <output name="totalPrice" for="price number"></output>
+        </form>
+     
+     <keygen> 标记定义表单里一个生成的键值（加密信息传送）
+     
+### 重定义标签
+    <b> 代表内联文本，通常时粗体，没有传递表示重要的意思
+    <i> 代表内联文本，通常时斜体，没有传递表示重要的意思
+    <dd> 可以同details与figure一同使用，定义包含文本，dialog也可以
+    <dt> 可以同details与figure一同使用，汇总细节，dialog也可以
+    <hr> 表示主题结束，而不是水平线，虽然显示相同
+    <small> 表示小字体，列入打印注释或者法律或者法律条款
+    <strong> 表示重要性而不是强调
+ 
+## 属性变化
+     
+### input
+     
+    email/url/number/range/date picker/search/color/tel
+    
+ ### 表单属性
+     
+    autocomplete/autofocus/multiple/placeholder/required
+ 
+### 链接属性
+    
+    <link>的sizes属性/<base>的target属性/超链接<a>
+    
+    size
+       <link rel="icon" href="icon.gif" type="image/gif" sizes="16x16">
+       
+    target
+       <base href="http://localhost/" target="_black"> 全局链接都调出新页面
+    超链接
+      a:media=""(表示对设备进行优化，handhelp对“手持”设备惊醒支持，tv对“电视”设备惊醒支持)
+      a:hreflang="zh"(设置语言，这里设置语言时中文)；
+      a:rel="external"(设置超链接的引用，这里超链接为外部链接)
+### 其他属性 
+    script/ol/html/style
+    script
+      defer:加载完脚本后并不执行，而是等整个页面加载完之后再执行
+      <script defer src="url"></script>
+      async:加载完脚本后立刻执行，不同等整个页面都加载完，属于一部执行
+      <script async src="url"></script>
+    ol  
+      start 起始位置
+      reversed 倒叙
+    html
+      mainfest="cache.manifest"(定义页面离线应用文件)
+      <html mainfest="cache.manifest">
+    style scoped   
